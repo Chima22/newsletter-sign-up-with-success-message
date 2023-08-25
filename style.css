@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+:root{
+    /* primary */
+    --Tomato: hsl(4, 100%, 67%);
+   
+    /* Neutral */
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding: 30px;
+    background: var(--DarkSlateGrey);
+}
+ .container{
+    display: flex;
+    align-content:center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    padding:  20px ;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+
+#dpic{
+    padding-left: 5px;
+}
+
+
+.details{
+    padding-left: 10px;
+}
+.details h1{
+   margin-bottom: 10px;
+   font-size: 230%;
+   font-weight: bolder;
+}
+.details p{
+    margin-bottom: 30px;
+    font-size:larger;
+    font-weight:bold ;
+ }
+ ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 100%;
+    font-weight: bold;
+ }
+ form input{
+    width: 60%;
+    padding: 8px 7px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+ }
+ button{
+    width: 55%;
+    padding: 8px 7px;
+    background-color: var(--CharcoalGrey);
+    color: var(--White);
+    border-radius: 7px;
+    cursor: pointer;
+ } 
+ .errort{
+    display: flex;
+    position: absolute;
+    right: 48%;
+    top:58%;
+    color: red;
+ }
+ 
+ .error{
+    border: 1px solid red;
+    background-color: rgba(175, 112, 112, 0.774);
+ }
+   /* desktop scren view */
+   
+@media (min-width:1000px) and (max-width:1900px) {
+    body{
+        /* display: flex; */
+        /* margin: 0 40px; */
+        padding: 30px;
+        background: var(--DarkSlateGrey);
+    }
+    .container{
+        display: flex;
+        align-content:center;
+        align-items: center;
+        width: 60%;
+        height: 500px;
+        margin: auto;
+        padding:  10px 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background-color: var(--White);
+    }
+    
+    #dpic{
+        padding-right: 25px;
+        
+    }
+    .mobile{
+        display: none;
+    }
+    .details{
+        padding-left: 20px;
+    }
+    .details h1{
+       margin-bottom: 10px;
+       font-size: 230%;
+       font-weight: bolder;
+    }
+    .details p{
+        margin-bottom: 30px;
+        font-size:larger;
+        font-weight:bold ;
+     }
+     ul li{
+        list-style: none;
+        margin-bottom: 20px;
+        font-size: 100%;
+        font-weight: bold;
+     }
+     form input{
+        width: 90%;
+        padding: 8px 7px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        cursor: pointer;
+     }
+     button{
+        width: 95%;
+        padding: 8px 7px;
+        background-color: var(--CharcoalGrey);
+        color: var(--White);
+        border-radius: 7px;
+        cursor: pointer;
+     }
+     button:hover{
+        background-color: var(--Tomato);
+     }
+     
+     .modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 0.4rem;
+        width: 400px;
+        padding: 1.3rem;
+        min-height: 250px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        z-index: 9;
+      }
+      .hidden{
+        display: none;
+      }
+      .modal p {
+        font-size: 0.9rem;
+        color: #777;
+        margin: 0.4rem 0 0.2rem;
+      }
+      .modal p span{
+        font-weight:bolder ;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 500%;
+        height: 600%;
+        background:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        z-index: 1;
+      } 
+}
+ /* medium screen view */
+@media (min-width:701px) and (max-width:999px) {
+    body{
+        /* display: flex; */
+        /* margin: 0 40px; */
+        padding: 30px;
+        background: var(--DarkSlateGrey);
+    }
+    .container{
+        display: flex;
+        align-content:center;
+        align-items: center;
+        width: 70%;
+        height: 500px;
+        margin: auto;
+        padding:  10px 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background-color: var(--White);
+    }
+    .errort{
+        display: flex;
+        position: absolute;
+        right: 48%;
+        top:55%;
+        color: red;
+     }
+    #dpic{
+        padding-right: 25px;
+        width: 70%;
+        
+        
+    }
+    .mobile{
+        display: none;
+    }
+    .details{
+        padding-left: 20px;
+    }
+    .details h1{
+       margin-bottom: 10px;
+       font-size: 230%;
+       font-weight: bolder;
+    }
+    .details p{
+        margin-bottom: 30px;
+        font-size:larger;
+        font-weight:bold ;
+     }
+     ul li{
+        list-style: none;
+        margin-bottom: 20px;
+        font-size: 100%;
+        font-weight: bold;
+     }
+     form input{
+        width: 90%;
+        padding: 8px 7px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        cursor: pointer;
+     }
+     button{
+        width: 95%;
+        padding: 8px 7px;
+        background-color: var(--CharcoalGrey);
+        color: var(--White);
+        border-radius: 7px;
+        cursor: pointer;
+     }
+     button:hover{
+        background-color: var(--Tomato);
+     }
+     
+     .modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 0.4rem;
+        width: 400px;
+        padding: 1.3rem;
+        min-height: 250px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        z-index: 9;
+      }
+      .hidden{
+        display: none;
+      }
+      .modal p {
+        font-size: 0.9rem;
+        color: #777;
+        margin: 0.4rem 0 0.2rem;
+      }
+      .modal p span{
+        font-weight:bolder ;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 500%;
+        height: 600%;
+        background:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        z-index: 1;
+      } 
+}
+  /* mobile view */
+ @media (min-width:334px) and (max-width:700px){
+    #dpic{
+        display: none;
+    }
+    .container{
+      display: none; 
+    }
+    .mobile{
+        display: block;
+        background-color: var(--White);
+        width: 108%;
+        margin: 10px;
+        margin-left: -10px;
+        padding-bottom: 20px;
+    }
+    .mpic img{
+        /* display: flex; */
+        width: 100%;
+        padding-right: 10px;
+    }
+    .details h1{
+        margin-bottom: 15px;
+        font-size: 200%;
+        font-weight:bolder;
+     }
+     .details p{
+        margin-bottom: 30px;
+        font-size:large;
+        font-weight:bolder ;
+        padding: 0 10px;
+     }
+     ul li{
+        font-size: 94%;
+        font-weight: bold;
+        padding-left: 5px;
+     }
+     form input{
+        width: 90%;
+        padding: 8px 7px;
+       
+     }
+     button{
+        width: 95%;
+        padding: 8px 7px;
+        
+     }
+     button:hover{
+        background-color: var(--Tomato);
+     }
+     .errortm{
+        display: flex;
+        position: absolute;
+        right: 10%;
+        top:85%;
+        color: red;
+     }
+     .modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 0.4rem;
+        width: 280px;
+        padding: 1rem;
+        min-height: 450px;
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        z-index: 9;
+      }
+      .hidden{
+        display: none;
+      }
+      .modal p {
+        font-size: 0.9rem;
+        color: #777;
+        margin: 0.4rem 0 0.2rem;
+      }
+      .modal p span{
+        font-weight:bolder ;
+      }
+      .dismiss{
+        margin-top: 200px;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 500%;
+        height: 600%;
+        background:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        z-index: 1;
+      } 
+}
