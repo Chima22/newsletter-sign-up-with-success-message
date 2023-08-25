@@ -362,7 +362,7 @@ body{
         display: flex;
         position: absolute;
         right: 10%;
-        top:112%;
+        top:110%;
         color: red;
      }
      .modal {
@@ -372,7 +372,8 @@ body{
         /* align-items: center; */
         gap: 0.4rem;
         width: 280px;
-        padding: 1rem;
+        padding: 3rem;
+        margin-left: 50px;
         min-height: 450px;
         position: absolute;
         top: 20%;
